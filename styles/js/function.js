@@ -52,22 +52,23 @@ console.log(total);
 alert("Question number two begins");
 
 const fistdiscount = prompt("Enter you choice of purchase: ");
+
 let dim = 2000;
 let din = 5000;
-let flot = dim - fistdiscount;
+let flot = fistdiscount - dim;
 let mean = flot / 100;
 let price = fistdiscount - mean;
 
 
-purd.innerHTML = fistdiscount;
 dis.innerHTML = mean;
+purd.innerHTML = fistdiscount;
 pri.innerHTML = price;
 
 
 if (fistdiscount < dim) {
     console.log("You are currently on 10% discount");
     alert("You are currently on 10% discount");
-} 
+}
 
 if (fistdiscount > din) {
     console.log("You are currently on 30% discount");
