@@ -50,14 +50,14 @@ console.log(total);
 //Number two question start from here.
 
 alert("Question number two begins");
-
 const fistdiscount = prompt("Enter you choice of purchase: ");
 
 let dim = 2000;
 let din = 5000;
+let thousandtwo = 2000;
 let flot = fistdiscount - dim;
 let mean = flot / 100;
-let price = fistdiscount - mean;
+let price = fistdiscount - mean - 100;
 
 
 dis.innerHTML = mean;
@@ -68,12 +68,15 @@ pri.innerHTML = price;
 if (fistdiscount < dim) {
     console.log("You are currently on 10% discount");
     alert("You are currently on 10% discount");
+    dos.innerHTML = "Discount based on = 10%";
+} else if (fistdiscount >= thousandtwo, fistdiscount <=5000) {
+    console.log("You are currently on 20% discount");
+    alert("You are currently on 20% discount");
+    dos.innerHTML = "Discount based on = 20%";
 }
 
 if (fistdiscount > din) {
     console.log("You are currently on 30% discount");
     alert("You are currently on 30% discount");
-} else if (fistdiscount < din) {
-    console.log("You are currently on 20% discount");
-    alert("You are currently on 20% discount");
+    dos.innerHTML = "Discount based on = 30%";
 }
