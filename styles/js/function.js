@@ -22,9 +22,10 @@
 // }
 // alert("Looking good");
 
-alert("Calculation for three friends who's actually payment is N10,000 and leave additional discount of 30%")
+alert("Calculation for three friends e.g who's actually payment is N10,000 and leave additional discount of 30%,You can try other Payment and Tip-Discount.")
 
-const friends1 = prompt("Enter Payment number: ");
+
+const friends1 = prompt("Enter Payment amount: ");
 const discount = prompt("Enter Tip-discount percent: ");
 const friends2 = prompt("Number of Friends: ");
 
@@ -35,13 +36,46 @@ let payment = parseInt(friends1);
 let fred = parseInt(friends2);
 let dimi = (parseInt(discount) / 100);
 
-
-document.getElementById("hood").innerHTML = payment;
-document.getElementById("frid").innerHTML = fred;
-document.getElementById("diss").innerHTML = number1;
-document.getElementById("done").innerHTML = total;
+//This is where i change question1 innerhtml 
+hood.innerHTML = payment;
+frid.innerHTML = fred;
+diss.innerHTML = number1;
+done.innerHTML = total;
 
 console.log(number1);
 console.log(number);
 console.log(total);
 
+
+//Number two question start from here.
+
+alert("Question number two begins");
+
+const fistdiscount = prompt("Enter you choice of purchase: ");
+let dim = 2000;
+let din = 5000;
+let flot = dim * fistdiscount;
+let mean = flot / 100;
+let price = mean - fistdiscount;
+
+
+dis.innerHTML = mean;
+purd.innerHTML = fistdiscount;
+pri.innerHTML = price;
+
+
+if (fistdiscount < dim) {
+    console.log("You are currently on 10% discount");
+    alert("You are currently on 10% discount");
+} else if (fistdiscount >= dim) {
+    console.log("You are currently on 20% discount");
+    alert("You are currently on 20% discount");
+}
+
+if (fistdiscount > din) {
+    console.log("You are currently on 30% discount");
+    alert("You are currently on 30% discount");
+} else if (fistdiscount < din) {
+    console.log("You are currently on 20% discount");
+    alert("You are currently on 20% discount");
+}
