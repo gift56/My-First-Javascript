@@ -31,7 +31,7 @@ const friends2 = prompt("Number of Friends: ");
 
 let number1 = (parseInt(discount) / 100) * parseInt(friends1);
 let number = parseInt(friends1) + number1;
-let total = number / 3;
+let total = number / friends2;
 let payment = parseInt(friends1);
 let fred = parseInt(friends2);
 let dimi = (parseInt(discount) / 100);
@@ -54,23 +54,20 @@ alert("Question number two begins");
 const fistdiscount = prompt("Enter you choice of purchase: ");
 let dim = 2000;
 let din = 5000;
-let flot = dim * fistdiscount;
+let flot = dim - fistdiscount;
 let mean = flot / 100;
-let price = mean - fistdiscount;
+let price = fistdiscount - mean;
 
 
-dis.innerHTML = mean;
 purd.innerHTML = fistdiscount;
+dis.innerHTML = mean;
 pri.innerHTML = price;
 
 
 if (fistdiscount < dim) {
     console.log("You are currently on 10% discount");
     alert("You are currently on 10% discount");
-} else if (fistdiscount >= dim) {
-    console.log("You are currently on 20% discount");
-    alert("You are currently on 20% discount");
-}
+} 
 
 if (fistdiscount > din) {
     console.log("You are currently on 30% discount");
