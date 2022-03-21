@@ -56,26 +56,32 @@ const first = parseInt(fistdiscount);
 let dim = 2000;
 let din = 5000;
 
-let d1= (10/100 * first)
+let d1 = (10 / 100 * first);
+let d2 = (20 / 100 * first);
+let d3 = (30 / 100 * first);
+
+let mean = first;
+let fist = (first - d1);
+let dist = (first - d2);
+let tist = (first - d3);
 
 
-dis.innerHTML = mean;
-purd.innerHTML = fistdiscount;
-pri.innerHTML = price;
+dis.innerHTML = d1,d2,d3;
+
+purd.innerHTML = first;
+pri.innerHTML = fist,dist,ti;
 
 
 if (fistdiscount < dim) {
     console.log("You are currently on 10% discount");
-    alert("You are currently on 10% discount");
     dos.innerHTML = "Discount based on = 10%";
+    
 } else if (fistdiscount >= thousandtwo, fistdiscount <= 5000) {
     console.log("You are currently on 20% discount");
-    alert("You are currently on 20% discount");
     dos.innerHTML = "Discount based on = 20%";
 }
 
 if (fistdiscount > din) {
     console.log("You are currently on 30% discount");
-    alert("You are currently on 30% discount");
     dos.innerHTML = "Discount based on = 30%";
 }
